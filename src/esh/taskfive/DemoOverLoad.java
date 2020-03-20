@@ -1,9 +1,12 @@
+/* Calculates a integer and double value of an sum, average and square. */
+
 package esh.taskfive;
 
-public class DemoOverLoad {
+public class DemoOverload {
 
 	public static void main(String[] args) {
 		
+		//Variables for integers.
 		int x = 5;
 		int y = 7;
 		int n = 8;
@@ -12,15 +15,19 @@ public class DemoOverLoad {
 		double o = 5.32;
 		double m = 4.23;
 		
-		int z = sum(x, y, n); // sum for int
-		double w = sum(h, o, m); // average for double
+		// sum for integer and double.
+		int z = sum(x, y, n); 
+		double w = sum(h, o, m);
 		
-		int a = average(x, y, n); //average for int
-		double b = average(h, o, m); // average for double
-				
-		int e = sqaure(x); // square for int
-		double f = square(h); // square for double
+		//average for integer and double.
+		int a = average(x, y, n); 
+		double b = average(h, o, m); 
 		
+		 // square for integer and double.
+		int e = sqaure(x);
+		double f = square(h);
+		
+		// Prints out value of sum, average and squares for doubles and integers. 
 		System.out.println("Sum int: " + z);
 		System.out.println("Sum Double: " + w);
 		
@@ -34,7 +41,8 @@ public class DemoOverLoad {
 	
 	public static int sum(int x, int y, int n) { 
 		
-		return x + y +n; // returns results back to the main
+		// returns results back to the main
+		return x + y +n;
 		
 	}
 	
